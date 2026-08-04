@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Siaya Group</title>
+  <meta name="description" content="Get in touch with Siaya Group to discuss your research or strategy needs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── HEADER ──────────────────────────────────────────── -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Siaya Group home">
+        <img src="logo.png" alt="Siaya Group" class="logo__mark" />
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <span class="nav-divider" aria-hidden="true">|</span>
+        <details class="nav-dropdown">
+          <summary>What We Do</summary>
+          <div class="nav-dropdown__panel" role="list">
+            <span role="listitem">Applied Research</span>
+            <span role="listitem">Business Strategy</span>
+            <span role="listitem">Advanced Analytics</span>
+          </div>
+        </details>
+        <span class="nav-divider" aria-hidden="true">|</span>
+        <details class="nav-dropdown">
+          <summary>Who We Serve</summary>
+          <div class="nav-dropdown__panel" role="list">
+            <span role="listitem">Development Organizations</span>
+            <span role="listitem">Governments</span>
+            <span role="listitem">Businesses</span>
+            <span role="listitem">NGOs</span>
+          </div>
+        </details>
+        <span class="nav-divider" aria-hidden="true">|</span>
+        <a href="publications.html">Publications</a>
+        <span class="nav-divider" aria-hidden="true">|</span>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── PAGE HERO ────────────────────────────────────── -->
+    <div class="page-hero">
+      <div class="page-hero__inner">
+        <h1>Get in Touch</h1>
+        <p>Tell us about your project and we'll respond within two business days.</p>
+      </div>
+    </div>
+
+    <!-- ─── CONTACT SECTION ──────────────────────────────── -->
+    <section class="contact-section">
+      <div class="contact-section__inner">
+
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p>
+            We work with development organizations, governments, businesses,
+            and NGOs across the globe. Whether you have a defined scope or
+            are still exploring, we're happy to talk.
+          </p>
+
+          <div class="contact-detail">
+            <span class="contact-detail__label">Email</span>
+            <span class="contact-detail__value">
+              <a href="mailto:hello@siayagroup.com">hello@siayagroup.com</a>
+            </span>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-detail__label">Based in</span>
+            <span class="contact-detail__value">London, UK &amp; Brussels, BE</span>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form name="contact" method="POST" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" name="first-name" autocomplete="given-name" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" name="last-name" autocomplete="family-name" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="organization">Organization</label>
+              <input type="text" id="organization" name="organization" autocomplete="organization" />
+            </div>
+
+            <div class="form-group">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic">
+                <option value="">Select a topic…</option>
+                <option value="applied-research">Applied Research</option>
+                <option value="business-strategy">Business Strategy</option>
+                <option value="advanced-analytics">Advanced Analytics</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your project or question…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--sage" style="width:100%;">Send message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ───────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer__copy">&copy; 2026 Siaya Group. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="nav.js" defer></script>
+</body>
+</html>
