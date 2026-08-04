@@ -601,6 +601,16 @@ footer {
   align-items: start;
 }
 
+.contact-section__inner--centered {
+  display: block;
+  max-width: 480px;
+  text-align: center;
+}
+
+.contact-section__inner--centered .contact-detail {
+  margin-bottom: 1rem;
+}
+
 .contact-info h2 {
   font-size: 1.55rem;
   margin-bottom: 1rem;
@@ -641,57 +651,6 @@ footer {
   color: var(--sage-text);
 }
 
-.contact-form {
-  background: var(--white);
-  padding: 2rem;
-  border: 1px solid var(--border);
-}
-
-.form-group {
-  margin-bottom: 1.25rem;
-}
-
-.form-group label {
-  display: block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--ink);
-  margin-bottom: 0.4rem;
-  letter-spacing: 0.02em;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  padding: 0.65rem 0.85rem;
-  border: 1.5px solid var(--border);
-  background: var(--white);
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
-  color: var(--ink);
-  outline: none;
-  transition: border-color 0.2s;
-  border-radius: 2px;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  border-color: var(--sage-text);
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
 /* ─── RESPONSIVE ─────────────────────────────────────────── */
 
 @media (max-width: 700px) {
@@ -727,10 +686,6 @@ footer {
   .contact-section__inner {
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
-
-  .form-row {
-    grid-template-columns: 1fr;
   }
 
   .footer-inner {
